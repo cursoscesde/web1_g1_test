@@ -6,13 +6,14 @@ $password = $_POST['password'];
     Si el usuario existe
     puede retorna el rol del usuario
 */
-$rol = 'invitado';
+$rol = 'admin';
 // 1. Iniciar servicio de sesión
 session_start();
 // 2 . Crear la sesión
 $_SESSION['user'] = 'ok'; // user = ok;
 $_SESSION['rol'] = $rol;
 
+// $pageToRedirect = "/web1_g1_test/pages/list_tasks.php";
 $pageToRedirect = "/pages/list_tasks.php";
 header("Location: {$pageToRedirect}");
 exit;

@@ -1,5 +1,6 @@
 
 <?php
+// require_once "{$_SERVER['DOCUMENT_ROOT']}/web1_g1_test/database/DBConnection.php";
 require_once "{$_SERVER['DOCUMENT_ROOT']}/database/DBConnection.php";
 class UserModel{
     private $db = NULL;

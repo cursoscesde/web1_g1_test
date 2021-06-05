@@ -3,6 +3,7 @@
 session_start();
 // preguntar por los datos de sesión
 if ($_SESSION['rol'] != 'admin') {
+    // $pageToRedirect = "/web1_g1_test/pages/login.php";
     $pageToRedirect = "/pages/login.php";
     header("Location: {$pageToRedirect}");
     exit;

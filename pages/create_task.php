@@ -1,15 +1,17 @@
 <?php
-require_once "{$_SERVER['DOCUMENT_ROOT']}/database//models/TaskModel.php";
+// require_once ("{$_SERVER['DOCUMENT_ROOT']}/web1_g1_test/database/models/TaskModel.php");
+require_once ("{$_SERVER['DOCUMENT_ROOT']}/database/models/TaskModel.php");
 // get data from form
-echo require_once "{$_SERVER['DOCUMENT_ROOT']}/database/DBConnection.php";
+//echo "hola";    
 $task = $_POST['task'];
 $description = $_POST['description'];
 $date = $_POST['date'];
+echo $date;
 if (!empty($task) || !empty($description) || !empty($date)) {
     // database connection
     $taskModel = new TaskModel();
     $taskModel->insert($task, $description, $date);
-    $pageToRedirect = "/pages/list_tasks.php";
+    $pageToRedirect = "/web1_g1_test/pages/list_tasks.php";
     header("Location: {$pageToRedirect}");
     exit;
 } else {
