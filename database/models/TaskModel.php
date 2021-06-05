@@ -1,6 +1,6 @@
 <?php
 
-require_once "{$_SERVER['DOCUMENT_ROOT']}/web1_g1/clase_13_03_2021_formularios/database/DBConnection.php";
+require_once "{$_SERVER['DOCUMENT_ROOT']}/database/DBConnection.php";
 
 class TaskModel
 {

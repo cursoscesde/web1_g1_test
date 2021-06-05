@@ -3,7 +3,7 @@
 session_start();
 // preguntar por los datos de sesión
 if ($_SESSION['rol'] != 'admin') {
-    $pageToRedirect = "/web1_g1/clase_13_03_2021_formularios/pages/login.php";
+    $pageToRedirect = "/pages/login.php";
     header("Location: {$pageToRedirect}");
     exit;
 }

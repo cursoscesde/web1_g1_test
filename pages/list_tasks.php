@@ -11,7 +11,7 @@
     </thead>
     <tbody>
         <?php
-            require_once "{$_SERVER['DOCUMENT_ROOT']}/web1_g1/clase_13_03_2021_formularios/database/models/TaskModel.php";
+            require_once "{$_SERVER['DOCUMENT_ROOT']}/database/models/TaskModel.php";
             $taskModel = new TaskModel();
             $tasks = $taskModel->getTasks();
             while($row = mysqli_fetch_assoc($tasks)){

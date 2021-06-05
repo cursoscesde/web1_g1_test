@@ -13,6 +13,6 @@ session_start();
 $_SESSION['user'] = 'ok'; // user = ok;
 $_SESSION['rol'] = $rol;
 
-$pageToRedirect = "/web1_g1/clase_13_03_2021_formularios/pages/list_tasks.php";
+$pageToRedirect = "/pages/list_tasks.php";
 header("Location: {$pageToRedirect}");
 exit;
