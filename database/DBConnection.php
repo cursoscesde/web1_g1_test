@@ -2,7 +2,7 @@
 
 class DBConnection{
 
-    private $host = "172.31.17.100";
+    private $host = "localhost";
     private $username = "root";
     private $password = "root";
     private $database = "taskapp";
