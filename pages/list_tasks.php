@@ -12,6 +12,7 @@
     <tbody>
         <?php
             require_once "{$_SERVER['DOCUMENT_ROOT']}/database/models/TaskModel.php";
+            echo "{$_SERVER['DOCUMENT_ROOT']}/database/models/TaskModel.php";
             $taskModel = new TaskModel();
             $tasks = $taskModel->getTasks();
             while($row = mysqli_fetch_assoc($tasks)){
