@@ -1,6 +1,6 @@
 
 <?php
-
+require_once "{$_SERVER['DOCUMENT_ROOT']}/database/DBConnection.php";
 class UserModel{
     private $db = NULL;
     public function __construct()

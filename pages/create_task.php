@@ -1,6 +1,7 @@
 <?php
 require_once "{$_SERVER['DOCUMENT_ROOT']}/database//models/TaskModel.php";
 // get data from form
+echo require_once "{$_SERVER['DOCUMENT_ROOT']}/database/DBConnection.php";
 $task = $_POST['task'];
 $description = $_POST['description'];
 $date = $_POST['date'];
